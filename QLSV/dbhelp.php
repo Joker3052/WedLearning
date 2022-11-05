@@ -1,6 +1,6 @@
 <?php
 require_once ('config.php');
-
+session_start();
 /**
  * insert, update, delete -> su dung function
  */
@@ -23,9 +23,9 @@ function executeResult($sql) {
 	$conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
 
 	//query
-	$resultset = mysqli_query($conn, $sql);
+	$resultset = mysqli_query($conn, $sql) or die( mysqli_error($conn));
 	$list      = [];
-	while ($row = mysqli_fetch_array($resultset)) {
+	while ($row = mysqli_fetch_array($resultset))  {
 		$list[] = $row;
 	}
 

@@ -1,6 +1,5 @@
 <?php
 require_once ('dbhelp.php');
-
 $s_fullname = $s_age = $s_address = '';
 
 if (!empty($_POST)) {
@@ -71,14 +70,19 @@ if (!empty($_POST)) {
 	// echo $sql;
 
 	execute($sql);
-
-	header('Location: index.php');
-	die();
+	$idLogin ='';
+	if (isset($_GET['idLogin'])) {
+		$idLogin = $_GET['idLogin'];
+		// header("Location: index.php?idLogin= $idLogin");
+		header("Location: index.php?idLogin=$idLogin");
+	}
+	 
+	// die();
 }
 
 $id = '';
-if (isset($_GET['id'])) {
-	$id          = $_GET['id'];
+if (isset($_GET['idEdit'])) {
+	$id          = $_GET['idEdit'];
 	$sql         = 'select * from student where id = '.$id;
 	$studentList = executeResult($sql);
 	if ($studentList != null && count($studentList) > 0) {
@@ -90,7 +94,8 @@ if (isset($_GET['id'])) {
 		$id = '';
 	}
 }
-echo $_GET['id'];
+// echo $_GET['idLogin'];
+// echo $_GET['idEdit'];
 // ?>
 
 <!DOCTYPE html>
