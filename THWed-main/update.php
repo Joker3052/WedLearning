@@ -105,7 +105,7 @@ require_once('dbhelper.php');
 				if (!option) {
 					return;
 				} else {
-					location.href = 'login.php';
+					location.href = 'login.php?linklogin=3"';
 				}
 
 			<?php  } ?>
@@ -126,7 +126,7 @@ require_once('dbhelper.php');
 				if (!option) {
 					return;
 				} else {
-					location.href = 'login.php';
+					location.href = 'login.php?linklogin=3"';
 				}
 
 			<?php  } ?>
@@ -154,7 +154,7 @@ require_once('dbhelper.php');
 				if (!option) {
 					return;
 				} else {
-					location.href = 'login.php';
+					location.href = 'login.php?linklogin=3"';
 				}
 
 			<?php  } ?>
