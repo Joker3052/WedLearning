@@ -10,8 +10,8 @@ require_once('dbhelper.php');
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
 	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
@@ -85,7 +85,7 @@ require_once('dbhelper.php');
 
 					</tbody>
 				</table>
-				<button class="btn btn-success" onclick="add()">Add Student</button>
+				<button class="btn btn-success" onclick="add()">Thêm Nhân Viên</button>
 			</div>
 		</div>
 	</div>

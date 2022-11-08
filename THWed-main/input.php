@@ -108,7 +108,7 @@ if (isset($_GET['idEdit'])) {
 	<div class="container">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h2 class="text-center">Add Student</h2>
+				<h2 class="text-center">Nhân Viên</h2>
 			</div>
 			<div class="panel-body">
 				<form method="post">
